@@ -22,7 +22,7 @@ public class SchoolManagement_DeleteBranch extends LoadBrowser {
 		login1.signButton();
 
 		SchoolManagement_Page sManage1 = new SchoolManagement_Page(driver);
-		
+
 		sManage1.clickSchoolMang();
 		sManage1.clickDelete();
 		sManage1.clickProcced();

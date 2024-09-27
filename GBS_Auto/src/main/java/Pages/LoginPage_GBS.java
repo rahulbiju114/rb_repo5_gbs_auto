@@ -15,7 +15,7 @@ public class LoginPage_GBS {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//input[@id='username']")  	// Username
+	@FindBy(xpath = "//input[@id='username']") // Username
 	WebElement userName1;
 
 	public void enterUsname(String usnameA) {
@@ -23,7 +23,7 @@ public class LoginPage_GBS {
 		userName1.sendKeys(usnameA);
 	}
 
-	@FindBy(xpath = "//input[@id='password']")		//Password
+	@FindBy(xpath = "//input[@id='password']") // Password
 	WebElement password1;
 
 	public void enterPass(String passA) {
@@ -31,7 +31,7 @@ public class LoginPage_GBS {
 		password1.sendKeys(passA);
 	}
 
-	@FindBy(xpath = "//button[@class='btn btn-primary d-block w-100']") 	//SignIn Button
+	@FindBy(xpath = "//button[@class='btn btn-primary d-block w-100']") // SignIn Button
 	WebElement signButton1;
 
 	public void signButton() {

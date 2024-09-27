@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import Pages.LoginPage_GBS;
 import Pages.SchoolManagement_Page;
 
-public class SchoolManagement_EditBranch extends LoadBrowser{
+public class SchoolManagement_EditBranch extends LoadBrowser {
 
 	@Test
 

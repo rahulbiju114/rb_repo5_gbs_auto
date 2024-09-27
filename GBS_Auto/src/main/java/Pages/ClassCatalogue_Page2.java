@@ -40,23 +40,23 @@ public class ClassCatalogue_Page2 {
 		serachBranch.click();
 		serachBranch.sendKeys("Kollam");
 	}
-	
+
 	@FindBy(xpath = "//td[@class='dataTables_empty']") // Display No Results
 	WebElement serachNoResults;
 
 	public void noSearchResults() {
-		
-		System.out.println("Display Message : "+serachNoResults.getText());
+
+		System.out.println("Display Message : " + serachNoResults.getText());
 	}
-	
+
 	public void clickSearch2() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // search
 		serachBranch.click();
 		serachBranch.sendKeys("TVM");
 	}
-	
-	public void foundSearchResults() {
-		
+
+	public void foundSearchResults() { // search found
+
 		System.out.println("Display Message : Results are found, therefore branch no need to be deleted");
 	}
 

@@ -6,8 +6,8 @@ import Pages.ClassCatalogue_Page2;
 import Pages.LoginPage_GBS;
 import Pages.SchoolManagement_Page;
 
-public class ClassCatalogue_MapCompareBranch extends LoadBrowser{
- 
+public class ClassCatalogue_MapCompareBranch extends LoadBrowser {
+
 	@Test
 
 	public void enterCrendentials() throws Exception {
@@ -25,11 +25,11 @@ public class ClassCatalogue_MapCompareBranch extends LoadBrowser{
 		classCatalogue.clickClassFee();
 		classCatalogue.clickSearch2();
 		classCatalogue.foundSearchResults();
-		
+
 		SchoolManagement_Page sManage1 = new SchoolManagement_Page(driver);
 		sManage1.clickSchoolMang();
 		sManage1.clickMapDelete();
 		sManage1.clickMapProcced();
 		sManage1.deleteAlert();
-}
+	}
 }

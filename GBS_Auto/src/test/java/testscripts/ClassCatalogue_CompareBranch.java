@@ -25,7 +25,7 @@ public class ClassCatalogue_CompareBranch extends LoadBrowser {
 		classCatalogue.clickClassFee();
 		classCatalogue.clickSearch();
 		classCatalogue.noSearchResults();
-		
+
 		SchoolManagement_Page sManage1 = new SchoolManagement_Page(driver);
 		sManage1.clickSchoolMang();
 		sManage1.clickDelete();

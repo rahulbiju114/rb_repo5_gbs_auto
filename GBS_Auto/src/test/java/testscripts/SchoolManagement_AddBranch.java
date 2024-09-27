@@ -28,8 +28,5 @@ public class SchoolManagement_AddBranch extends LoadBrowser {
 		sManage1.enterBranchName();
 		sManage1.clickSaveButton();
 
-
 	}
 }
-
-
