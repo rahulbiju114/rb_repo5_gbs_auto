@@ -121,4 +121,101 @@ public class SchoolManagement_Page {
 		System.out.println("Alert Message : " + deleteAlert.getText());
 	}
 
+	/////////////////////////////// School Management Manage/////////////////////////
+	/////////////////////////////// Manage Fee //////////////////////////////
+
+	@FindBy(xpath = "(//img[@alt='downArrow'])[2]") // locate Manage Fee
+	WebElement locateManageFee;
+
+	public void LocateManageFee() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		locateManageFee.click();
+	}
+
+	@FindBy(xpath = "(//button[normalize-space()='Add Fee Type'])[1]") // locate Manage Fee
+	WebElement clickAddFeeType;
+
+	public void clickAddFeeType() {
+		clickAddFeeType.click();
+	}
+
+	@FindBy(xpath = "(//input[@id='fee_head'])[1]") // Enter Fee Type
+	WebElement enterFeeType;
+
+	public void enterFeeType() {
+		enterFeeType.sendKeys("Class Fee");
+	}
+
+	@FindBy(xpath = "(//input[@id='term_frequency'])[1]") // click term
+	WebElement clickCheckBox;
+
+	public void clickCheckBox() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		clickCheckBox.click();
+	}
+	
+	@FindBy(xpath = "(//button[@type='submit'][normalize-space()='Save'])[1]") // click save button
+	WebElement clickSave2;
+
+	public void clickSave2() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		clickSave2.click();
+	}
+	
+	@FindBy(xpath = "(//button[@type='button'][normalize-space()='Cancel'])[1]") // click cancel button
+	WebElement clickCancel;
+
+	public void clickCancel() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		clickCancel.click();
+	}
+	
+	@FindBy(xpath = "(//input[@type='search'])[1]") // serach 
+	WebElement enterSerach2;
+
+	public void enterSerach2() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		enterSerach2.sendKeys("Tuti");
+	}
+	
+	@FindBy(xpath = "(//button[@title='Edit'])[1]") // edit
+	WebElement clickEdit2;
+
+	public void clickEdit2() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		clickEdit2.click();
+	}
+	
+	@FindBy(xpath = "(//button[@type='submit'][normalize-space()='Save'])[2]") // click save button
+	WebElement clickSave3;
+
+	public void clickSave3() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		clickSave2.click();
+	}
+	
+	@FindBy(xpath = "(//select[@name='fee_head_data_length'])[1]") // click cancel button
+	WebElement clickCancel3;
+
+	public void clickCancel3() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		clickCancel3.click();
+	}
+		
+		@FindBy(xpath = "(//select[@name='fee_head_data_length'])[1]") // click cancel button
+		WebElement clickEntries;
+
+	public void clickEntries() {
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			clickEntries.click();
+	}
+			
+			@FindBy(xpath = "//option[@value='25']") // click cancel button
+			WebElement clickEntriesValue;
+	
+		public void clickEntriesValue() {
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+				clickEntriesValue.click();
+	
+}
 }

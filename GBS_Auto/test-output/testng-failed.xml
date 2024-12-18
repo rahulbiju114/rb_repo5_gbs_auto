@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.ClassCatalogue_CompareBranch">
+      <class name="testscripts.SchoolManagement_FeeType">
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="enterCrendentials"/>
         </methods>
-      </class> <!-- testscripts.ClassCatalogue_CompareBranch -->
+      </class> <!-- testscripts.SchoolManagement_FeeType -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
